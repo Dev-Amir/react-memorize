@@ -3,7 +3,10 @@ import './App.css';
 import Hello from './components/Hello/Hello';
 import Square from './components/square/Square';
 
-function App() {
+interface IAppProps {
+};
+
+const App: React.FC<IAppProps> = () => {
   const [count, setCount] = useState<number>(0);
   const favoriteNums = useState<number[]>([10, 30, 90])[0];
 
